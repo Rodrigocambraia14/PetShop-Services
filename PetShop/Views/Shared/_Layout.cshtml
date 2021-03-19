@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ATV2_ORIG</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    
+    <style>
+        #menu ul{
+            background-color:rgb(81, 129, 255);
+            list-style:none;
+            padding:10px;
+            margin:0px;
+        }
+        #menu ul li{ 
+            display:inline
+        }
+
+        #menu ul li a{
+            padding:0px 8%;
+            display:inline-block;
+            color: white;
+            font-size:25px;
+        }
+        footer{
+            position:fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color:rgb(81, 129, 255);
+            margin:0px;   
+        }
+        #bottom-text{
+            font-size: 15px;
+            color: white;
+            text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <nav id = "menu">
+            <ul>
+                <li><a asp-area = "" asp-controller ="Home" asp-action = "Index">Início</a></li>
+                <li><a asp-area = "" asp-controller ="Home" asp-action = "Agendamento">Agendamento</a></li>
+                <li><a asp-area = "" asp-controller ="Home" asp-action = "Servicos">Servicos</a></li>
+                <li><a asp-area = "" asp-controller ="Home" asp-action = "QuemSomos">Quem somos</a></li>
+            </ul>
+        </nav>
+        
+    </header>      
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer>
+         <p id = "bottom-text">&copy; 2021 - Copyright - Petshop - (99) xxxxx-xxxx</p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

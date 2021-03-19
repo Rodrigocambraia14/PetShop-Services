@@ -1,0 +1,48 @@
+@model Dados
+<style>
+    div{
+       display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    fieldset{
+        width: 30%;
+    }
+    input.inputPadrao,select.inputPadrao{
+        width: 100%;
+
+    }
+
+</style>
+ <fieldset>
+    <div>
+    <form asp-action = "Confirmacao" method = "POST">
+        <p>
+            <label asp-for = "Nome">Nome:</label>
+            <input class ="inputPadrao" type = "text" asp-for = "Nome">
+        </p>
+        <p>
+        <label asp-for = "Telefone">Telefone:</label>
+        <input class ="inputPadrao" type = "tel" asp-for = "Telefone">
+        </p>
+        <p>
+        <label asp-for = "Data">Data:</label>
+        <input class = "inputPadrao" class ="inputPadrao" type = "date" asp-for = "Data">
+        </p>
+        <p>
+        <label asp-for = "Animal"></label>
+        <select class = "inputPadrao" asp-for = "Animal">
+           <option value = "cão">cão</option>
+           <option value = "gato">gato</option>
+           <option value = "roedor">roedor</option>
+           <option value = "animais exóticos">animais exóticos</option>
+        </select>
+        </p>
+        <p>
+        <label asp-for = "Necessidade">Necessidade:</label>
+        <textarea name = "Necessidade" cols = "30" rows = "5"></textarea>
+        </p>
+        <input type = "submit" value = "Cadastrar">
+    </form>
+    </div>
+ </fieldset>

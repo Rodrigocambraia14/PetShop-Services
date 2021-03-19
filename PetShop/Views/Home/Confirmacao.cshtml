@@ -1,0 +1,38 @@
+@model List<Dados>
+
+<style>
+    table{
+        width:100%;
+    }
+    table, th, td{
+        border-collapse: collapse;
+        border: 1px solid black;
+        text-align: center;
+    }
+</style>
+<h2>Parabéns, seu agendamento foi concluído!</h2>
+<div>
+    <table>
+        <thead>
+         <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Data</th>
+            <th>Animal</th>
+            <th>Necessidade</th>
+         </tr>
+        </thead>
+        <tbody>
+            @foreach(Dados a in Model)
+            {
+                <tr>
+                    <td>@a.Nome</td>
+                    <td>@a.Telefone</td>
+                    <td>@a.Data</td>
+                    <td>@a.Animal</td>
+                    <td>@a.Necessidade</td>
+                </tr>
+            }   
+        </tbody>
+    </table>
+</div>

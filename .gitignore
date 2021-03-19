@@ -332,3 +332,14 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+*.json
+*.csproj
+*.js
+*.map
+PetShop/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css
+PetShop/wwwroot/lib/bootstrap/dist/css/bootstrap.css
+PetShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css
+PetShop/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css
+PetShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css
+PetShop/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css
+PetShop/Models/ErrorViewModel.cs
