@@ -8,4 +8,3 @@ Made with ASP.NET / MVC + bootstrap Framework;
 HTML5, CSS3 and C#;
 
 
-SENAC course project;
